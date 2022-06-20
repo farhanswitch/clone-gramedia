@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: inter;
+  src: url("src/Inter/inter.ttf");
+}
+@layer components {
+  .recomend-card {
+    @apply hover:shadow-none shadow-md md:max-h-[425px] min-w-[80px] cursor-pointer;
+  }
+  .show {
+    @apply block;
+  }
+}

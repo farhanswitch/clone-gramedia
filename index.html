@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gramedia | Muhammad Farhan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid w-full font-inter">
+      <nav
+        class="shadow-lg pb-2 sticky top-0 bg-white/60 backdrop-blur-lg z-[10]"
+      >
+        <div class="top mx-auto text-end bg-sky-300/40 py-2">
+          <p
+            class="mx-auto text-slate-700 max-w-5xl text-end pr-4 text-sm md:text-base"
+          >
+            <span
+              class="h-6 w-6 text-white inline-grid rounded-full bg-stone-700/60 place-items-center"
+              >?</span
+            >
+            Bantuan
+          </p>
+        </div>
+        <div
+          class="container mx-auto max-w-5xl flex md:flex-row flex-col justify-around items-center py-2 gap-2 px-4"
+        >
+          <div class="brand">
+            <img
+              class="w-[155px] h-[31px] block mx-auto"
+              src="src/img/gramedia-icon-2.png"
+              alt=""
+            />
+          </div>
+          <div class="nav-mid w-full md:w-[60%] flex gap-4 relative">
+            <button
+              id="categoryBtn"
+              class="w-[18%] text-blue-600 flex items-center gap-2"
+            >
+              Kategori
+              <span
+                ><img src="src/img/chevron-down.svg" alt="dropdown" class="w-4"
+              /></span>
+            </button>
+            <input
+              class="border w-[90%] rounded-xl h-[35px] pl-4 pr-[40px] focus:outline-0"
+              type="search"
+              id="search-nav"
+              placeholder="Cari Produk, Judul Buku, Penulis"
+            />
+            <span
+              class="search-icon absolute right-1 top-[50%] -translate-y-[50%]"
+            >
+              <img src="src/img/ios-search.svg" alt="search" class="w-[25px]" />
+            </span>
+          </div>
+          <div class="nav-end flex items-center gap-4">
+            <button><a href="#" class="text-blue-600">Masuk</a></button>
+            <button>
+              <img class="w-[25px]" src="src/img/bag.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="categories mx-auto max-w-5xl hidden">
+          <ul class="grid grid-cols-4 text-center gap-2 text-sm mt-4 px-4">
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Mega Best Seller</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Buku</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">ETICKET</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Stationery, Sekolah & Kantor</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Ebook</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Majalah</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Fashion & Aksesoris</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Teknologi</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Mainan & Hobi</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Makanan & Minuman</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Olahraga</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Peralatan Kesehatan</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Perlengkapan Bayi</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Tisu</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Tali Sepatu</a>
+            </li>
+            <li
+              class="hover:text-white hover:bg-blue-500 grid place-items-center rounded py-2"
+            >
+              <a href="#">Tas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container mx-auto max-w-5xl mt-8">
+        <header class="flex gap-4 px-4">
+          <div
+            class="carousel w-full md:w-2/3 overflow-hidden relative rounded"
+          >
+            <div
+              class="prev z-[9] absolute h-8 w-8 flex justify-center items-center rounded-full text-center left-1 bg-white/70 text-blue-700/60 md:left-[1vw] text-2xl top-[150px] -translate-y-1/2 cursor-pointer"
+            >
+              <span class="text-sm font-bold"><</span>
+            </div>
+            <div
+              class="next z-[9] absolute h-8 w-8 grid place-items-center rounded-full text-center right-1 md:right-[1vw] bg-white/70 text-blue-700/60 text-2xl top-[150px] -translate-y-1/2 cursor-pointer"
+            >
+              <span class="text-sm font-bold">></span>
+            </div>
+            <div
+              class="inner whitespace-nowrap transition-transform duration-300"
+            >
+              <div
+                class="carousel-item px-3 md:px-0 inline-flex h-[300px] text-white w-full bg-cover bg-center"
+              >
+                <img class="w-full" src="src/img/carousel1.png" alt="" />
+              </div>
+              <div
+                class="carousel-item px-3 md:px-0 inline-flex h-[300px] text-white w-full"
+              >
+                <img class="w-full" src="src/img/carousel2.jpg" alt="" />
+              </div>
+              <div
+                class="carousel-item px-3 md:px-0 inline-flex h-[300px] text-white w-full"
+              >
+                <img class="w-full" src="src/img/carousel3.jpg" alt="" />
+              </div>
+              <div
+                class="carousel-item px-3 md:px-0 inline-flex h-[300px] text-white w-full"
+              >
+                <img class="w-full" src="src/img/carousel4.jpeg" alt="" />
+              </div>
+              <div
+                class="carousel-item px-3 md:px-0 inline-flex h-[300px] text-white w-full"
+              >
+                <img class="w-full" src="src/img/carousel5.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="header-banner hidden md:flex w-1/3 h-[300px] flex-col gap-2"
+          >
+            <img
+              src="src/img/side-carousel1.jpg"
+              class="w-full h-1/2 rounded"
+              alt=""
+            />
+            <img
+              src="src/img/side-carousel2.jpg"
+              class="w-full h-1/2 rounded"
+              alt=""
+            />
+          </div>
+        </header>
+        <section
+          class="menu mt-6 grid grid-cols-4 md:grid-cols-8 text-slate-700 px-4"
+        >
+          <div class="menu-item">
+            <img src="src/img/menu1.png" class="block mx-auto" alt="menu 1" />
+            <p class="text-center text-base">Buku Baru Andalan</p>
+          </div>
+          <div class="menu-item">
+            <img src="src/img/menu2.png" class="block mx-auto" alt="menu 2" />
+            <p class="text-center text-base">Buku Pilihan</p>
+          </div>
+          <div class="menu-item">
+            <img src="src/img/menu3.png" class="block mx-auto" alt="menu 3" />
+            <p class="text-center text-base">Buku Import</p>
+          </div>
+          <div class="menu-item">
+            <img src="src/img/menu4.png" class="block mx-auto" alt="menu 4" />
+            <p class="text-center text-base">E-Book & Paket Premium</p>
+          </div>
+          <div class="menu-item">
+            <img src="src/img/menu5.png" class="block mx-auto" alt="menu 5" />
+            <p class="text-center text-base">Gramedia Academy</p>
+          </div>
+          <div class="menu-item">
+            <img src="src/img/menu6.png" class="block mx-auto" alt="menu 6" />
+            <p class="text-center text-base">Print On Demand</p>
+          </div>
+          <div class="menu-item">
+            <img src="src/img/menu7.png" class="block mx-auto" alt="menu 7" />
+            <p class="text-center text-base">Stationery</p>
+          </div>
+          <div class="menu-item">
+            <img src="src/img/menu8.png" class="block mx-auto" alt="menu 8" />
+            <p class="text-center text-base">Mainan</p>
+          </div>
+        </section>
+        <section class="rekomendasi my-4">
+          <h2 class="text-2xl mb-2 px-4">Rekomendasi Gramedia Untukmu</h2>
+          <div class="cards gap-2 grid grid-cols-3 md:grid-cols-6 px-4">
+            <div
+              class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+            >
+              <div class="thumb relative pt-2">
+                <img
+                  class="h-[150px] block mx-auto"
+                  src="src/img/melangkah.jpg"
+                  alt="Melangkah"
+                />
+                <span
+                  class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                  >25%</span
+                >
+              </div>
+              <div class="desc pt-2 px-2">
+                <p class="penulis text-xs mb-4">Js Khairen</p>
+                <h3 class="judul">Melangkah</h3>
+                <p class="harga text-blue-700">Rp 69.750</p>
+                <p class="coret text-sm text-slate-600">
+                  <del><i> Rp 93.000</i></del>
+                </p>
+              </div>
+            </div>
+            <div
+              class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+            >
+              <div class="thumb relative pt-2">
+                <img
+                  class="h-[150px] block mx-auto"
+                  src="src/img/laut-bercerita.jpg"
+                  alt="laut bercerita"
+                />
+                <span
+                  class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                  >20%</span
+                >
+              </div>
+              <div class="desc pt-2 px-2">
+                <p class="penulis text-xs mb-4">Leila S Chudori</p>
+                <h3 class="judul">Laut Bercerita</h3>
+                <p class="harga text-blue-700">Rp 80.000</p>
+                <p class="coret text-sm text-slate-600">
+                  <del><i> Rp 100.000</i></del>
+                </p>
+              </div>
+            </div>
+            <div
+              class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+            >
+              <div class="thumb relative pt-2">
+                <img
+                  class="h-[150px] block mx-auto"
+                  src="src/img/hai-miko.jpeg"
+                  alt="hai-miko"
+                />
+                <span
+                  class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                  >25%</span
+                >
+              </div>
+              <div class="desc pt-2 px-2">
+                <p class="penulis text-xs mb-4">Ono Eriko</p>
+                <h3 class="judul">Hai, Miiko! 34 - Premium</h3>
+                <p class="harga text-blue-700">Rp 45.000</p>
+                <p class="coret text-sm text-slate-600">
+                  <del><i> Rp 60.000</i></del>
+                </p>
+              </div>
+            </div>
+            <div
+              class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+            >
+              <div class="thumb relative pt-2">
+                <img
+                  class="h-[150px] block mx-auto"
+                  src="src/img/home-sweet.jpg"
+                  alt="home-sweet"
+                />
+                <span
+                  class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                  >25%</span
+                >
+              </div>
+              <div class="desc pt-2 px-2">
+                <p class="penulis text-xs mb-4">Almira Bastari</p>
+                <h3 class="judul">Home Sweet Loan</h3>
+                <p class="harga text-blue-700">Rp 71.250</p>
+                <p class="coret text-sm text-slate-600">
+                  <del><i> Rp 95.000</i></del>
+                </p>
+              </div>
+            </div>
+            <div
+              class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+            >
+              <div class="thumb relative pt-2">
+                <img
+                  class="h-[150px] block mx-auto"
+                  src="src/img/jujutsu-kaisen.jpg"
+                  alt="jujutsu-kaisen"
+                />
+                <span
+                  class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                  >25%</span
+                >
+              </div>
+              <div class="desc pt-2 px-2">
+                <p class="penulis text-xs mb-4">Gege Akutami</p>
+                <h3 class="judul">Jujutsu Kaisen 05</h3>
+                <p class="harga text-blue-700">Rp 30.000</p>
+                <p class="coret text-sm text-slate-600">
+                  <del><i> Rp 40.000</i></del>
+                </p>
+              </div>
+            </div>
+            <div
+              class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+            >
+              <div class="thumb relative pt-2">
+                <img
+                  class="h-[150px] block mx-auto"
+                  src="src/img/technical-analysis.jpg"
+                  alt="technical-analysis"
+                />
+                <span
+                  class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                  >20%</span
+                >
+              </div>
+              <div class="desc pt-2 px-2">
+                <p class="penulis text-xs mb-4">Edianto Ong</p>
+                <h3 class="judul">Technical Analysis For Mega Profit</h3>
+                <p class="harga text-blue-700">Rp 180.000</p>
+                <p class="coret text-sm text-slate-600">
+                  <del><i> Rp 225.000</i></del>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="buku-populer py-2">
+          <div class="judul flex items-center justify-between px-4">
+            <h2 class="text-2xl">Buku-Buku Populer</h2>
+            <span class="text-blue-700 font-semibold">Lihat Semua</span>
+          </div>
+          <div class="isi py-2 flex gap-8 px-4">
+            <div class="poster hidden md:block">
+              <img src="src/img/custom-banner1.png" alt="custom-banner1" />
+            </div>
+            <div
+              class="cards mx-auto grid grid-cols-2 justify-center md:grid-cols-5 gap-3"
+            >
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/laut-bercerita.jpg"
+                    alt="laut-bercerita"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >20%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">Leila S. Chudori</p>
+                  <h3 class="judul">Laut Bercerita</h3>
+                  <p class="harga text-blue-700">Rp 80.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 100.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/home-sweet.jpg"
+                    alt="home-sweet"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >25%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">Almira Bastari</p>
+                  <h3 class="judul">Home Sweet Loan</h3>
+                  <p class="harga text-blue-700">Rp 71.250</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 95.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/rich-dads.jpg"
+                    alt="rich-dads.jpg"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >25%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">Robert T. Kiyosaki</p>
+                  <h3 class="judul">Rich Dad's - Increase Your Financial IQ</h3>
+                  <p class="harga text-blue-700">Rp 51.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 60.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/atomic-habits.jpg"
+                    alt="atomic-habits"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >25%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">James Clear</p>
+                  <h3 class="judul">
+                    Atomic Habits: Perubahan Kecil yang Memberikan Hasil Luar
+                    Biasa
+                  </h3>
+                  <p class="harga text-blue-700">Rp 81.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 100.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/narnia-1.jpg"
+                    alt="narnia-1"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >20%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">C.S. Lewis</p>
+                  <h3 class="judul">The Chronicles of Narnia #1</h3>
+                  <p class="harga text-blue-700">Rp 52.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 65.000</i></del>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="novel-paling-laris py-2">
+          <div class="judul flex items-center justify-between px-4">
+            <h2 class="text-2xl">Novel Paling Laris</h2>
+            <span class="text-blue-700 font-semibold">Lihat Semua</span>
+          </div>
+          <div class="isi py-2 flex gap-8 px-4">
+            <div class="poster hidden md:block">
+              <img src="src/img/custom-banner2.png" alt="custom-banner1" />
+            </div>
+            <div class="cards grid grid-cols-2 mx-auto md:grid-cols-5 gap-3">
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/narnia-1.jpg"
+                    alt="narnia-1"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >20%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">C.S. Lewis</p>
+                  <h3 class="judul">The Chronicles of Narnia #1</h3>
+                  <p class="harga text-blue-700">Rp 52.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 65.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/heartbreak-motel.jpg"
+                    alt="heartbreak-motel"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >25%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">Ika Natassa</p>
+                  <h3 class="judul">Heartbreak Motel</h3>
+                  <p class="harga text-blue-700">Rp 74.250</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 99.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/narnia-3.jpg"
+                    alt="narnia-3.jpg"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >20%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">C.S. Lewis</p>
+                  <h3 class="judul">The Chronicles of Narnia #3</h3>
+                  <p class="harga text-blue-700">Rp 52.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 65.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/narnia-2.jpg"
+                    alt="narnia-2.jpg"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >20%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">C.S. Lewis</p>
+                  <h3 class="judul">The Chronicles of Narnia #2</h3>
+                  <p class="harga text-blue-700">Rp 52.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 65.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/narnia-4.jpg"
+                    alt="narnia-4"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >20%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <p class="penulis text-xs mb-4">C.S. Lewis</p>
+                  <h3 class="judul">The Chronicles of Narnia #4</h3>
+                  <p class="harga text-blue-700">Rp 52.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 65.000</i></del>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="voucher-edukasi py-2">
+          <div class="judul flex items-center justify-between px-4">
+            <h2 class="text-2xl">Voucher Edukasi</h2>
+            <span class="text-blue-700 font-semibold">Lihat Semua</span>
+          </div>
+          <div class="isi py-2 flex overflow-auto gap-8 px-4">
+            <div class="poster hidden md:block">
+              <img src="src/img/custom-banner3.png" alt="custom-banner3" />
+            </div>
+            <div class="cards grid mx-auto grid-cols-2 md:grid-cols-5 gap-3">
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/evoucher-1.jpg"
+                    alt="evoucher-1"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >30%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <h3 class="judul">E-Voucher Gramedia Academy - Strategi</h3>
+                  <p class="harga text-blue-700">Rp 140.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 200.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/evoucher-2.jpg"
+                    alt="evoucher-2.jpg"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >30%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <h3 class="judul">
+                    E-Voucher Gramedia Academy - Passion To Serve..
+                  </h3>
+                  <p class="harga text-blue-700">Rp 140.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 200.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/evoucher3.jpg"
+                    alt="evoucher-3.jpg"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >30%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <h3 class="judul">
+                    E-Voucher Gramedia Academy - Membuat Kebaya..
+                  </h3>
+                  <p class="harga text-blue-700">Rp 140.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 200.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/evoucher-4.jpg"
+                    alt="evoucher-4.jpg"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >30%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <h3 class="judul">
+                    E-Voucher Gramedia Academy - Kelas Prakarya
+                  </h3>
+                  <p class="harga text-blue-700">Rp 140.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 200.000</i></del>
+                  </p>
+                </div>
+              </div>
+              <div
+                class="recomend-card max-w-[150px] border pb-2 rounded rounded-[12px] overflow-hidden"
+              >
+                <div class="thumb relative pt-2">
+                  <img
+                    class="h-[150px] block mx-auto"
+                    src="src/img/evoucher-5.jpg"
+                    alt="evoucher-5"
+                  />
+                  <span
+                    class="discount bg-pink-200 text-red-700 font-semibold text-sm px-2 py-1 absolute top-0 left-0"
+                    >30%</span
+                  >
+                </div>
+                <div class="desc pt-2 px-2">
+                  <h3 class="judul">E-Voucher Gramedia Academy - How To..</h3>
+                  <p class="harga text-blue-700">Rp 350.000</p>
+                  <p class="coret text-sm text-slate-600">
+                    <del><i> Rp 500.000</i></del>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="brand-pilihan">
+          <h2 class="text-2xl py-4 px-4">Brand Pilihan</h2>
+          <div
+            class="brand-container grid grid-cols-3 md:grid-cols-6 px-4 gap-2"
+          >
+            <div class="brand-card flex h-[90px] border">
+              <img
+                src="src/img/gramedia-brand.png"
+                alt="gramedia-brand"
+                class="block h-[88px] mx-auto"
+              />
+            </div>
+            <div class="brand-card flex h-[90px] border">
+              <img
+                src="src/img/widiasarana-brand.png"
+                alt="widiasarana-brand.png"
+                class="block h-[88px] mx-auto"
+              />
+            </div>
+            <div class="brand-card flex h-[90px] border">
+              <img
+                src="src/img/bip-brand.jpeg"
+                alt="bip-brand.jpeg"
+                class="block h-[88px] mx-auto"
+              />
+            </div>
+            <div class="brand-card flex h-[90px] border">
+              <img
+                src="src/img/elexmedia-brand.jpg"
+                alt="elexmedia-brand.jpg"
+                class="block h-[88px] mx-auto"
+              />
+            </div>
+            <div class="brand-card flex h-[90px] border">
+              <img
+                src="src/img/kpg-brand.jpg"
+                alt="kpg-brand.jpg"
+                class="block h-[88px] mx-auto"
+              />
+            </div>
+            <div class="brand-card flex h-[90px] border">
+              <img
+                src="src/img/m&c-brand.png"
+                alt="m&c-brand.png"
+                class="block h-[88px] mx-auto"
+              />
+            </div>
+          </div>
+        </section>
+        <hr class="my-6" />
+        <section class="blog">
+          <div class="judul mb-6 flex items-center justify-between px-4">
+            <h2 class="text-2xl">Blog Gramedia</h2>
+            <span class="text-red-500 tracking-wider">Lihat Semua</span>
+          </div>
+          <div class="blog-container flex flex-col md:flex-row gap-6 px-4 pb-6">
+            <div class="left relative mb-8 md:mb-0">
+              <img
+                src="src/img/blog-banner.png"
+                alt="blog-banner"
+                class="h-1/2"
+              />
+              <p class="my-2 text-slate-500 uppercase text-sm">
+                Sastra Indonesia
+              </p>
+              <h3 class="font-[600] text-slate-600">
+                Novel Cantik Itu Luka Rayakan 20 Tahu dengan Sampul Terbaru
+              </h3>
+              <p class="text-sm md:absolute bottom-1">17 Juni 2022</p>
+            </div>
+            <div class="right flex flex-col gap-2">
+              <div class="blog-card h-[120px] flex gap-2">
+                <div
+                  class="card-img h-full aspect-square bg-[url('src/img/one-piece-blog.jpg')] bg-cover bg-center"
+                ></div>
+                <div class="card-content relative">
+                  <p class="uppercase text-sm text-slate-600">manga</p>
+                  <h4 class="text-slate-900 text-sm md:text-base">
+                    Komik One Piece 99: Pertarungan para Monster
+                  </h4>
+                  <p class="text-xs text-slate-500 absolute bottom-1">
+                    17 Juni 2022
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card h-[120px] flex gap-2">
+                <div
+                  class="card-img h-full aspect-square bg-[url('src/img/smart-library-blog.jpeg')] bg-cover bg-center"
+                ></div>
+                <div class="card-content relative">
+                  <p class="uppercase text-sm text-slate-600">info gramedia</p>
+                  <h4 class="text-slate-900 text-sm md:text-base">
+                    Smart Library Yayasan Taruna Bakti Mudahkan Anggotanya dalam
+                    Bekerja
+                  </h4>
+                  <p class="text-xs text-slate-500 absolute bottom-1">
+                    17 Juni 2022
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card h-[120px] flex gap-2">
+                <div
+                  class="card-img h-full aspect-square bg-[url('src/img/blog-banner.png')] bg-cover bg-center"
+                ></div>
+                <div class="card-content relative">
+                  <p class="uppercase text-sm text-slate-600">
+                    buku best seller
+                  </p>
+                  <h4 class="text-slate-900 text-sm md:text-base">
+                    10 Novel Indonesia Best Seller hingga Juni 2022
+                  </h4>
+                  <p class="text-xs text-slate-500 absolute bottom-1">
+                    09 Juni 2022
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="subscription bg-sky-100 px-4">
+        <div
+          class="container max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 py-8 items-center tracking-wider"
+        >
+          <div class="title">
+            <h2 class="text-md md:text-xl text-black text-center md:text-start">
+              Kejutan spesial dari kami hanya untukmu
+            </h2>
+          </div>
+          <div class="form-email mx-auto flex mt-3 md:mt-0">
+            <input
+              type="email"
+              name="email"
+              placeholder="Masukkan email anda disini"
+              class="inline-block h-[30px] w-[220px] md:h-[40px] sm:w-[240px] md:w-[300px] px-3 py-2 text-slate-500 rounded-tl-lg rounded-bl-lg"
+            />
+            <button
+              class="h-[30px] md:h-[40px] bg-blue-700 text-white px-4 md:px-4 md:py-2 grid place-items-center rounded-tr-lg rounded-br-lg"
+            >
+              Daftar
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bottom-menu">
+        <div
+          class="container max-w-5xl mx-auto grid grid-cols-2 mx-auto gap-4 md:grid-cols-4 py-4 px-4"
+        >
+          <div class="menu">
+            <p class="mb-4 text-blue-800">Belanja</p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400"> Berbelanja</a>
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Pembayaran</a>
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Pengiriman</a>
+            </p>
+          </div>
+          <div class="menu">
+            <p class="mb-4 text-blue-800">Tentang Gramedia</p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Tentang Kami</a>
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Toko Kami</a>
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Kerjasama</a>
+            </p>
+          </div>
+          <div class="menu">
+            <p class="mb-4 text-blue-800">Lainnya</p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Syarat & Ketentuan</a>
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Kebujakan & Privasi</a>
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Bantuan</a>
+            </p>
+            <p class="mb-2 text-sm md:text-base">
+              <a href="#" class="hover:text-sky-400">Hubungi Kami</a>
+            </p>
+          </div>
+          <div class="menu">
+            <p class="mb-4 text-blue-800">Aplikasi Seluler Kami</p>
+            <p>
+              Download aplikasi <b>Gramedia.com</b> yang tersedia di seluruh
+              perangkat iOS dan Android
+            </p>
+            <div class="store flex gap-2 mt-2">
+              <img
+                src="src/img/play-store.png"
+                alt="play-store"
+                class="w-1/2"
+              />
+              <img src="src/img/app-store.png" alt="app-store" class="w-1/2" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bottom-title"
+        style="box-shadow: 0 -5px 5px rgba(128, 128, 128, 0.3)"
+      >
+        <div class="container max-w-5xl mx-auto py-6 px-4 flex gap-2">
+          <div class="logo w-1/4 grid place-items-center">
+            <img
+              src="src/img/gramedia-icon-2.png"
+              alt="gramedia-icon-2"
+              class="h-[20px] md:h-[31px]"
+            />
+          </div>
+          <div class="mid w-1/2 grid place-items-center">
+            <p class="text-slate-500">
+              Toko Buku online terbesar, terlengkap dan terpercaya di Indonesia
+            </p>
+          </div>
+          <div class="sosmed w-1/4 flex items-center gap-3">
+            <img
+              src="src/img/ig-icon.png"
+              alt="ig-icon"
+              class="w-[20px] md:w-[30px]"
+            />
+            <img
+              src="src/img/twitter-icon.png"
+              alt="twitter-icon"
+              class="w-[20px] md:w-[30px]"
+            />
+            <img
+              src="src/img/fb-icon.png"
+              alt="fb-icon"
+              class="w-[20px] md:w-[30px]"
+            />
+          </div>
+        </div>
+      </section>
+      <footer class="bg-sky-100 text-center w-full py-2">
+        <p class="text-sm text-blue-600">&copy; 2022 PT. Gramedia Asri Media</p>
+      </footer>
+      <div
+        class="fix-icons flex items-center flex-col md:flex-row bg-transparent fixed bottom-2 right-2"
+      >
+        <img
+          src="src/img/wa.png"
+          alt="wa-icon"
+          class="h-[40px] md:h-[60px] aspect-square"
+        />
+        <img
+          src="src/img/gramed-circle.png"
+          alt="gramed-circle"
+          class="h-[45px] md:h-[70px] aspect-square rounded-full"
+          style="box-shadow: 0 0 6px 3px rgba(128, 128, 128, 0.2)"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
